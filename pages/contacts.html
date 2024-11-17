@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Contacts</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a class="logo-for-link" href="../index.html">My Web Project</a>
+      </div>
+
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list-item"><a class="navigation-list-link" href="../index.html">Main page</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="articles.html">Articles</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="catalog.html">Catalog</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="contacts.html">Contacts</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="page_nav.html">Page
+              navigation</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="registration.html">Registration</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="main-content">
+      <div class="container">
+        <h1 class="container-title-contacts">Welcome to the Contacts page.</h1>
+
+        <section class="address-title" aria-labelledby="address-title">
+          <h2 class="title" id="address-title">Our Address</h2>
+          <address class="contact-inner">
+            46V Vyshhorodska Street, Kyiv, 02000
+          </address>
+        </section>
+
+        <section class="address-title" aria-labelledby="map-title">
+          <h2 class="title" id="map-title">How to Get Here</h2>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.640759383508!2d30.448167215730612!3d50.51554637948188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d286bb26b3a1%3A0xfbe17be34bbab89e!2zNDZWIHZ1bHl0c2lhIFZpc2hob3JvZHNrYSwgS2l5diwgMDQxMTQ!5e0!3m2!1sen!2sua!4v1698751641436!5m2!1sen!2sua"
+              allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </section>
+
+        <section class="address-title" aria-labelledby="feedback-title">
+          <h2 class="title" id="feedback-title">Feedback Form</h2>
+          <form action="https://tests.fomenko.top/echo/index.php" method="get">
+            <fieldset class="form-wrap">
+              <legend class="form-wrap_title">Contact Information</legend>
+              <div>
+                <label class="form-subtitle" for="name">Name</label>
+                <input class="form-input input--capitalize" type="text" id="name" name="name" required>
+              </div>
+              <div>
+                <label class="form-subtitle" for="phone">Phone</label>
+                <input class="form-input input-text" type="tel" id="phone" name="phone" required>
+              </div>
+              <div>
+                <label class="form-subtitle" for="email">Email</label>
+                <input class="form-input input-text" type="email" id="email" name="email" required>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-wrap">
+              <legend class="form-wrap_title">Your Question</legend>
+              <div>
+                <label class="form-subtitle" for="question">Ask a Question</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-wrap">
+              <div class="form-group">
+                <button class="btn" type="submit">Send</button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="container footer-inner">
+        <div class="copyright">&copy; NadiiaYevtushenko 2024</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

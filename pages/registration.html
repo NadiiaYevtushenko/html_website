@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Registration</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a class="logo-for-link" href="../index.html">My Web Project</a>
+      </div>
+
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list-item"><a class="navigation-list-link" href="../index.html">Main page</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="articles.html">Articles</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="catalog.html">Catalog</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="contacts.html">Contacts</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="page_nav.html">Page
+              navigation</a>
+          </li>
+          <li class="navigation-list-item"><a class="navigation-list-link" href="registration.html">Registration</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="main-content">
+      <div class="container">
+        <h1 class="container-title-registration">Welcome to the Registration page.</h1>
+
+        <form action="https://tests.fomenko.top/echo/index.php" method="GET" enctype="multipart/form-data">
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">Personal Information</legend>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="surname">Surname</label>
+              <input class="form-input form-input--capitalize" id="surname" name="surname" placeholder="Surname"
+                type="text" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="name">Name</label>
+              <input class="form-input form-input--capitalize" id="name" name="name" placeholder="Name" type="text"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="date">Date of Birth</label>
+              <input class="form-input" id="date" name="date" type="date" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="file">Add a photo</label>
+              <input class="form-input input-text" id="file" name="file" type="file" accept="image/*">
+            </div>
+          </fieldset>
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">Single Choice/Gender</legend>
+
+            <div class="form-group-sm">
+              <input class="form-radio" id="male" name="sex" type="radio" value="male">
+              <label class="form-subtitle" for="male">Man</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input class="form-radio" id="female" name="sex" type="radio" value="female">
+              <label class="form-subtitle" for="female">Woman</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">Contact Information</legend>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="email">Email Address</label>
+              <input class="form-input input-text" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="site">Website</label>
+              <input class="form-input" id="site" name="site" type="url" placeholder="https://mysite.name"
+                value="https://mysite.name">
+            </div>
+          </fieldset>
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">Account Security</legend>
+
+            <div class="form-group">
+              <label class="form-subtitle" for="password">Password</label>
+              <input class="form-input" id="password" name="password" placeholder="Password" type="password" required>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">Preferences/Favorite Cuisine(s)</legend>
+
+            <div class="form-group-sm">
+              <input class="form-input" id="kitchen-ua" name="kitchen[]" type="checkbox" value="ua">
+              <label class="form-subtitle" for="kitchen-ua">Ukrainian</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input class="form-input" id="kitchen-jp" name="kitchen[]" type="checkbox" value="jp">
+              <label class="form-subtitle" for="kitchen-jp">Japanese</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input class="form-input" id="kitchen-ch" name="kitchen[]" type="checkbox" value="ch">
+              <label class="form-subtitle" for="kitchen-ch">Indian</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">#Open choise variants</legend>
+            <div class="form-group">
+              <label class="form-subtitle" for="sel">Dropdown list</label>
+              <select class="form-select" id="sel" name="sel" multiple size="10">
+                <option selected disabled value="">Выберите год</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2021">2022</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">About Yourself</legend>
+            <div class="form-group">
+              <label class="form-subtitle" for="txt">Some info about me</label>
+              <textarea cols="30" id="txt" name="txt" placeholder="Write about yourself..." rows="4"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-wrap">
+            <legend class="form-wrap_title">Control panel</legend>
+            <div class="form-group">
+              <button class="btn" type="submit">Register</button>
+            </div>
+            <div class="form-group">
+              <button class="btn" type="reset">Clear form</button>
+            </div>
+            <div class="form-group">
+              <button class="btn" type="submit">Simple button</button>
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="container footer-inner">
+        <div class="copyright">&copy; NadiiaYevtushenko 2024</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
